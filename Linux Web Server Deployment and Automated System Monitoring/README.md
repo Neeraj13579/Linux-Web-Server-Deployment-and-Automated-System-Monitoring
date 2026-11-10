@@ -7,11 +7,20 @@ log monitoring, and an automated health-check script scheduled with cron.
 ## Architecture
 
 ```
-Linux Web Server (AWS EC2 t2.micro)
-├── Nginx Web Server (port 80, custom HTML pages)
-├── Firewall (firewalld): allow HTTP + SSH, block everything else
-├── Log Monitoring: Nginx access/error logs, system logs, journalctl
-└── Shell Automation: server_health_check.sh (runs every 5 min via cron)
+Linux Web Server (EC2 or VM)
+├── Nginx Web Server
+ │   ├── Default site (port 80)
+ │    └── Custom HTML page
+├── Firewall (firewalld)
+ │   ├── Allow HTTP (80)
+ │   ├── Allow SSH (22)
+ │    └── Block everything else
+├── Log Monitoring
+ │   ├── /var/log/nginx/access.log
+ │    └── /var/log/nginx/error.log
+ └── Shell Script
+     └── server_health_check.sh (auto-runs every 5 min via cron)
+
 ```
 
 ## Tech Stack
@@ -99,4 +108,4 @@ sudo /usr/local/bin/server_health_check.sh
 - Bug found and fixed: the original script set the timestamp once, so every log line showed the same time. It is now generated per log entry.
 
 ## Author
-**Neeraj Kumar** · [LinkedIn](https://www.linkedin.com/in/your-profile) · your-email@example.com
+**Neeraj Kumar** · [LinkedIn](https://github.com/Neeraj13579/) · neeraj453318@gmail.com
