@@ -99,4 +99,4 @@ sudo /usr/local/bin/server_health_check.sh
 - Bug found and fixed: the original script set the timestamp once, so every log line showed the same time. It is now generated per log entry.
 
 ## Author
-**Neeraj Kumar** · [LinkedIn](https://www.linkedin.com/in/your-profile) · your-email@example.com
+**Neeraj Kumar** · [LinkedIn](https://www.linkedin.com/in/your-profile) · neeraj453318@gmail.com
