@@ -1,4 +1,4 @@
-# Linux Web Server Setup: Nginx, Firewall & Automated Health Monitoring
+# Linux Web Server Deployment & Automated System Monitoring
 
 A production-style Linux web server built from scratch on **AWS EC2 (Amazon Linux 2023)**.
 The project covers package management, Nginx deployment, firewall configuration,
