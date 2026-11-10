@@ -56,7 +56,7 @@ Amazon Linux 2023 · Nginx · firewalld · Bash · cron · systemd · rsyslog ·
 ## Screenshots
 
 **Nginx running**
-![Nginx status](Linux_Web_Server_Deployment_and_Automated_System_Monitoring/screenshots/step13-output-1.png)
+![Nginx status](screenshots/step13-output-1.png)
 
 **Firewall rules**
 ![Firewall](screenshots/step13-output-2.png)
